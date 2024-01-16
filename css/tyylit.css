@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: blanchedalmond;
+}
+main{
+    display: flex;
+}
+article{
+    display: flex;
+    text-align: left;
+    background-color: aqua;
+    margin: 5px;
+    flex-direction: column;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-basis: 150px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: burlywood;
+    padding: 2em;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
