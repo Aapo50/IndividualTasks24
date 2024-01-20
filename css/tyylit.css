@@ -4,6 +4,35 @@ header{
     flex-direction: column;
     background-color: blanchedalmond;
 }
+nav{
+    background-color: aquamarine;
+    padding: 0.2em;
+    }
+    
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .top-menu li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .top-menu a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    
+    
+    .top-menu a:visited{
+        color: red;
+    }
+    
+    .top-menu a:hover {
+        color: rgb(255, 0, 140);
+    }
 main{
     display: flex;
 }
@@ -20,13 +49,13 @@ aside{
     text-align: left;
     flex-basis: 150px;
 }
-footer{
+#footer{
     display: flex;
-    flex-direction: column;
     text-align: center;
+    position: sticky;
     background-color: burlywood;
-    padding: 2em;
     bottom: 0;
-    position: fixed;
-    width: 100%;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
 }

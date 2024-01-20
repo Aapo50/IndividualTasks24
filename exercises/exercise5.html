@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tyylit.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Simple HTML Page</title>
 
 </head>
@@ -15,6 +16,35 @@
         <h1 id="h1spe">Welcome to My Website</h1>
         <p id="pspe">Your go-to place for interesting content.</p>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color: burlywood;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="exercises/exercise1.html"target="_blank">Exercise 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="exercises/exercise2.html"target="_blank">Exercise 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Exercise 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="exercises/exercise4.html"target="_blank">Exercise 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="exercises/exercise5.html"target="_blank">Exercise 5</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
 
     <main>
 
@@ -36,17 +66,63 @@
             <h2 class="artspe">Article Title 2</h2>
             <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis magnam animi nihil debitis soluta molestias facilis ratione voluptatem maiores, libero tempora odio reprehenderit quae corporis fuga sunt distinctio corrupti tenetur!</p>
         </article>
+        <article class="content-article">
+            <h2 class="artspe">Article Title 3</h2>
+            <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis magnam animi nihil debitis soluta molestias facilis ratione voluptatem maiores, libero tempora odio reprehenderit quae corporis fuga sunt distinctio corrupti tenetur!</p>
+        </article>
     </section>
-
-
+    
 </main>
+<aside><table class="table custom-table">
+    <thead>
+        <tr>
+            <th>Numero</th>
+            <th>Nimi</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Joni Maisema</td>
+            <td>joni@example.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mari Ruusu</td>
+            <td>mari@example.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Boris Johnson</td>
+            <td>boris@example.com</td>
+        </tr>
+    </tbody>
+</table>
 
+<div class="container">
+    <form>
+        <h2>Contact Us</h2>
 
-  
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
 
-    <footer id="main-footer">
-        <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
 
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+</div>
+</aside>
+
+<footer id="footer">
+        <em><b>&copy;2023 My Website. All rights reserved.</b></em>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
